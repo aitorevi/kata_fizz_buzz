@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RectangleTest {
-// Hola amigos
+
     @Test
     void shouldReturnTheBase() {
         Rectangle rectangle = new Rectangle(2, 4);
