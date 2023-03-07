@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class FizzBuzzTest {
 
     @Test
-    void shouldReturn1AsIsA() throws Exception {
+    void shouldReturn1AsIsA() {
         assertEquals("1",fizzBuzz(1));
         assertEquals("2",fizzBuzz(2));
         assertEquals("fizz",fizzBuzz(3));
