@@ -16,30 +16,29 @@ public class FizzBuzzNumbers {
     public static List<String> fizz_buzz_resolve(List<Integer> list_numbers) {
         List<String> list_resolve = new ArrayList<>();
         for (Integer number : list_numbers) {
-            if (not_multiple_of_three_and_five(number)) {
-                list_resolve.add(number.toString());
-                continue;
-            }
-            if (multiple_of_three(number) && multiple_of_five(number)) {
-                list_resolve.add("FizzBuzz");
-                continue;
-            }
-            if (multiple_of_three(number)) {
-                list_resolve.add("Fizz");
-                continue;
-            }
-            if (multiple_of_five(number)) {
-                list_resolve.add("Buzz");
-            }
+            list_resolve.add(fizzbuzz_resolve(number));
         }
         return list_resolve;
     }
 
-    public static boolean multiple_of_three(Integer number) {
-        return number % 3 == 0;
+    public static String fizzbuzz_resolve(Integer number) {
+        if (not_multiple_of_three_and_five(number)) {
+            return number.toString();
+        }
+        if (not_multiple_of_three(number)) {
+            return "Buzz";
+        }
+        if (not_multiple_of_five(number)) {
+            return "Fizz";
+        }
+        return "FizzBuzz";
     }
 
-    public static boolean multiple_of_five(Integer number) {
+    public static boolean not_multiple_of_three(Integer number) {
+        return number % 3 != 0;
+    }
+
+    public static boolean not_multiple_of_five(Integer number) {
         return number % 5 == 0;
     }
 

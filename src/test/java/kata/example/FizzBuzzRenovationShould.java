@@ -24,7 +24,6 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
 public class FizzBuzzRenovationShould {
 
     @Test
@@ -35,7 +34,6 @@ public class FizzBuzzRenovationShould {
     @Test
     void be_fizz() {
         assertEquals(List.of("Fizz"), FizzBuzzRenovation.fizz_buzz(List.of(3)));
-
     }
 
     @Test
