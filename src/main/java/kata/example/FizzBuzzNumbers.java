@@ -21,8 +21,6 @@ public class FizzBuzzNumbers {
         return list_resolve;
     }
 
-// nombres de los metodos currarselos
-
     public static String fizzbuzzTransformation(Integer number) {
         if (notMultipleOfThreeAndFive(number)) {
             return number.toString();
