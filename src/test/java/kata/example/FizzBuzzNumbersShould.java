@@ -28,20 +28,20 @@ public class FizzBuzzNumbersShould {
 
     @Test
     void not_be_fizzbuzz() {
-        assertEquals(List.of("1", "2"), FizzBuzzNumbers.fizz_buzz_resolve(List.of(1, 2))); }
+        assertEquals(List.of("1", "2"), FizzBuzzNumbers.fizzBuzzResolve(List.of(1, 2))); }
 
     @Test
     void be_fizz() {
-        assertEquals(List.of("Fizz"), FizzBuzzNumbers.fizz_buzz_resolve(List.of(9)));
+        assertEquals(List.of("Fizz"), FizzBuzzNumbers.fizzBuzzResolve(List.of(9)));
     }
 
     @Test
     void be_buzz() {
-        assertEquals(List.of("Buzz"), FizzBuzzNumbers.fizz_buzz_resolve(List.of(5)));
+        assertEquals(List.of("Buzz"), FizzBuzzNumbers.fizzBuzzResolve(List.of(5)));
     }
 
     @Test
     void be_fizzbuzz() {
-        assertEquals(List.of("FizzBuzz"), FizzBuzzNumbers.fizz_buzz_resolve(List.of(15)));
+        assertEquals(List.of("FizzBuzz"), FizzBuzzNumbers.fizzBuzzResolve(List.of(15)));
     }
 }
