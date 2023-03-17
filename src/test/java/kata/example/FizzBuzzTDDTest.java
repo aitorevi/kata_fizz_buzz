@@ -21,7 +21,7 @@ public class FizzBuzzTDDTest {
     @Test
     void oneReturnNumber() {
         assertEquals("1",FizzBuzzTDD.fizzBuzz(1));
-       // assertThat("1",FizzBuzzTDD.fizzBuzz(1));
+       // assertThat(true);
     }
 
     @Test
